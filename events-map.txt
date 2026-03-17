@@ -1,0 +1,17 @@
+# © 2026 AltiBedrift – Levert av Haut Forvalting AS.
+# Event Map - Source of Truth
+
+# Navigation
+click | navigation | logo_home
+click | navigation | hero_cta_secondary
+view | navigation | header
+
+# Conversion
+click | conversion | hero_cta_primary
+click | conversion | nav_cta
+submit | conversion | contact_form
+
+# Engagement
+open_chat | engagement | ai_widget
+chat_message_sent | engagement | user
+click | engagement | read_more_insight

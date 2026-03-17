@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personvern | Hawkeye AS</title>
+    <meta name="description" content="Personvernerklæring for Hawkeye AS. Hvordan vi behandler dine personopplysninger.">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Standard favicon -->
+      <link rel="icon" href="bilder/favicon/favicon.ico">
+      <link rel="shortcut icon" href="bilder/favicon/favicon-32x32.png?v=999" type="image/png">
+  
+  <!-- PNG favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="bilder/favicon/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="bilder/favicon/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="bilder/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="bilder/favicon/favicon-128x128.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="bilder/favicon/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="bilder/favicon/favicon-256x256.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="bilder/favicon/favicon-512x512.png">
+  
+  <!-- Apple (iPhone / iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="bilder/favicon/favicon-180x180.png">
+  
+  <!-- Android / PWA -->
+  <link rel="manifest" href="bilder/favicon/site.webmanifest">
+  <meta name="theme-color" content="#071633">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            fontSize: {
+              'hero': ['clamp(1.75rem, 4vw, 3.5rem)', { lineHeight: '1.1' }],
+              'h2': ['clamp(2rem, 5vw, 4rem)', { lineHeight: '0.9' }],
+              'body': ['clamp(1rem, 1.1vw, 1.25rem)', { lineHeight: '1.5' }],
+            },
+            colors: {
+              brand: {
+                dark: '#0f172a',
+                primary: '#F25A13',
+                silver: '#DDDDDD',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-brand-silver text-brand-dark antialiased">
+    <!-- HEADER -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-white/20 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex justify-between items-center h-24">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="/" class="flex items-center space-x-3 group">
+              <img src="bilder/logo/svart-logo.png" alt="Hawkeye Logo" class="w-24 h-22">
+            </a>
+          </div>
+          
+          <nav class="hidden md:flex space-x-8 items-center">
+            <div class="nav-dropdown">
+              <a href="/#tjenester" class="text-xs font-bold uppercase tracking-widest hover:text-brand-primary transition-colors flex items-center">
+                Tjenester
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </a>
+              <div class="nav-dropdown-content">
+                <a href="/landmaling.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Landmåling</a>
+                <a href="/dronekartlegging.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Dronekartlegging</a>
+                <a href="/laserskanning.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">3D Laserskanning</a>
+                <a href="/kontraktsoppfolging.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Kontraktsoppfølging</a>
+                <a href="/gis.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">GIS Analyse</a>
+                <a href="/panorama.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">360 Panorama</a>
+                <a href="/mobile-mapping.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Mobile Mapping</a>
+                <a href="/inspeksjon.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Spesialinspeksjon</a>
+                <a href="/databehandling.html" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:text-brand-primary">Databehandling</a>
+              </div>
+            </div>
+            <a href="/#bransjer" class="text-xs font-bold uppercase tracking-widest hover:text-brand-primary transition-colors">Bransjer</a>
+            <a href="/prosjekter.html" class="text-xs font-bold uppercase tracking-widest hover:text-brand-primary transition-colors">Prosjekter</a>
+            <a href="/om-oss.html" class="text-xs font-bold uppercase tracking-widest hover:text-brand-primary transition-colors">Om oss</a>
+            <a href="https://www.instagram.com/hawkeyeas" target="_blank" class="min-w-[44px] min-h-[44px] w-11 h-11 flex items-center justify-center transition-colors group">
+              <svg class="w-5 h-5 text-brand-dark/70 group-hover:text-brand-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="/#kontakt" class="bg-brand-dark text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-primary transition-all shadow-xl">Kontakt</a>
+          </nav>
+    
+          <div class="flex md:hidden items-center">
+            <button id="mobile-menu-button" class="text-brand-dark focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center -m-2 p-2">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <div id="mobile-menu" class="hidden fixed inset-x-0 top-24 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-2xl z-[150] md:hidden transition-all duration-300">
+        <div class="px-6 py-8 space-y-4">
+          <a href="/landmaling.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Landmåling</a>
+          <a href="/dronekartlegging.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Dronekartlegging</a>
+          <a href="/laserskanning.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">3D Laserskanning</a>
+          <a href="/kontraktsoppfolging.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Kontraktsoppfølging</a>
+          <a href="/gis.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">GIS Analyse</a>
+          <a href="/panorama.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">360 Panorama</a>
+          <a href="/mobile-mapping.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Mobile Mapping</a>
+          <a href="/inspeksjon.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Spesialinspeksjon</a>
+          <a href="/databehandling.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Databehandling</a>
+          <a href="/prosjekter.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Prosjekter</a>
+          <a href="/om-oss.html" class="block py-3 min-h-[44px] flex items-center text-sm font-bold uppercase tracking-tighter hover:text-brand-primary">Om oss</a>
+          <hr class="border-gray-100">
+          <a href="/#kontakt" class="block bg-brand-dark text-white text-center py-4 min-h-[44px] flex items-center justify-center rounded-xl font-bold uppercase tracking-widest">Kontakt oss</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-48 pb-32">
+      <div class="max-w-3xl mx-auto px-6">
+        <h1 class="text-4xl font-bold mb-12">Personvern<span class="text-brand-primary">erklæring.</span></h1>
+        
+        <div class="prose prose-slate max-w-none space-y-8 text-gray-700">
+          <section>
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">1. Innledning</h2>
+            <p>Hawkeye AS tar ditt personvern på alvor. Denne erklæringen forklarer hvordan vi samler inn, bruker og beskytter dine personopplysninger når du bruker vår nettside og våre tjenester.</p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">2. Hvilke opplysninger vi samler inn</h2>
+            <p>Vi samler kun inn opplysninger som er nødvendige for å besvare dine henvendelser via vårt kontaktskjema:</p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Navn</li>
+              <li>Firmanavn</li>
+              <li>E-postadresse og telefonnummer (hvis oppgitt)</li>
+              <li>Informasjon om ditt prosjekt/forespørsel</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">3. Formålet med behandlingen</h2>
+            <p>Opplysningene brukes utelukkende til å:</p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Besvare dine forespørsler</li>
+              <li>Gi deg pristilbud på våre tjenester</li>
+              <li>Følge opp pågående prosjekter</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">4. Lagring og sletting</h2>
+            <p>Vi lagrer dine opplysninger så lenge det er nødvendig for å oppfylle formålet med innsamlingen, eller så lenge loven krever det. Du kan når som helst be om innsyn i eller sletting av dine data.</p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">5. Kontakt oss</h2>
+            <p>Har du spørsmål om personvern? Kontakt oss på <a href="mailto:rune@hawkeye.as" class="text-brand-primary font-bold">rune@hawkeye.as</a>.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-32 pb-12 bg-brand-dark text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-brand-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+      
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-16 mb-24">
+          
+          <div class="lg:col-span-1">
+            <a href="/" class="flex items-center space-x-3 mb-8">
+              <img src="bilder/logo/skarpere-logo.png" alt="Hawkeye Logo" class="w-32 h-26">
+            </a>
+            <p class="text-white/80 text-sm leading-relaxed mb-8">
+              Spesialisert partner innen geomatikk og teknisk dokumentasjon. Vi leverer presisjonsdata som fjerner usikkerhet i komplekse infrastrukturprosjekter over hele Vestlandet og nasjonalt.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/hawkeyeas.no" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-primary transition-colors group">
+                <svg class="w-5 h-5 text-white/60 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/hawkeyeas" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-primary transition-colors group">
+                <svg class="w-5 h-5 text-white/60 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+            </div>
+          </div>
+    
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-8">Navigasjon</h4>
+            <ul class="space-y-4 text-sm">
+              <li><a href="/#tjenester" class="text-white/70 hover:text-brand-primary transition-colors">Våre Tjenester</a></li>
+              <li><a href="/#kategorier" class="text-white/70 hover:text-brand-primary transition-colors">Bransjeløsninger</a></li>
+              <li><a href="/prosjekter.html" class="text-white/70 hover:text-brand-primary transition-colors">Prosjektdokumentasjon</a></li>
+              <li><a href="/om-oss.html" class="text-white/70 hover:text-brand-primary transition-colors">Om Hawkeye</a></li>
+              <li><a href="/#knowledge-hub" class="text-white/70 hover:text-brand-primary transition-colors">Kunnskapsbase</a></li>
+              <li><a href="/#faq" class="text-white/70 hover:text-brand-primary transition-colors">Ofte stilte spørsmål</a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-8">Tjenester</h4>
+            <ul class="space-y-4 text-sm">
+              <li><a href="/landmaling.html" class="text-white/70 hover:text-brand-primary transition-colors">Landmåling & Stikking</a></li>
+              <li><a href="/dronekartlegging.html" class="text-white/70 hover:text-brand-primary transition-colors">Dronekartlegging</a></li>
+              <li><a href="/laserskanning.html" class="text-white/70 hover:text-brand-primary transition-colors">3D Laserskanning</a></li>
+              <li><a href="/kontraktsoppfolging.html" class="text-white/70 hover:text-brand-primary transition-colors">Kontraktsoppfølging</a></li>
+              <li><a href="/mobile-mapping.html" class="text-white/70 hover:text-brand-primary transition-colors">Mobile Mapping</a></li>
+              <li><a href="/inspeksjon.html" class="text-white/70 hover:text-brand-primary transition-colors">Spesialinspeksjon</a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary mb-8">Kontakt & Portaler</h4>
+            <div class="space-y-6 text-sm">
+              <div class="flex items-start space-x-4">
+                <svg class="w-5 h-5 text-brand-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <p class="text-white/80 leading-relaxed">
+                  Holsundvegen 732<br>
+                  5642 Holmefjord
+                </p>
+              </div>
+              <div class="flex items-start space-x-4">
+                <svg class="w-5 h-5 text-brand-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <p class="text-white/80">
+                  Man - Fre: 07:30 - 16:30
+                </p>
+              </div>
+              
+              <div class="pt-4 border-t border-white/10 space-y-4">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Eksterne Verktøy</p>
+                <a href="https://www.360bilder.no/norefusa/#/" target="_blank" class="block text-white hover:text-brand-primary transition-colors font-medium">
+                  360° Interaktiv befaring →
+                </a>
+                <a href="https://marpix.no/" target="_blank" class="block text-white hover:text-brand-primary transition-colors font-medium">
+                  Marpix Maritim Foto →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 gap-6">
+          <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <p>© 2026 Hawkeye AS. Org.nr: 913 653 157.</p>
+            <p>Ekspert: Rune Samnøy</p>
+          </div>
+          <div class="flex space-x-8">
+            <a href="/personvern.html" class="hover:text-white transition-colors uppercase tracking-widest">Personvern</a>
+            <a href="https://g.page/hawkeye-as" target="_blank" class="hover:text-white transition-colors uppercase tracking-widest flex items-center">
+              <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Google Business
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+    
+      menuBtn.addEventListener('click', () => {
+        // Toggle menyen
+        mobileMenu.classList.toggle('hidden');
+        
+        // Valgfritt: Bytt ikon fra "hamburger" til "X" når åpen
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        if (isOpen) {
+          menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // X-ikon
+        } else {
+          menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger-ikon
+        }
+      });
+    
+      // Lukk menyen når man klikker på en link
+      const navLinks = mobileMenu.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        });
+      });
+    });</script>
+</html>

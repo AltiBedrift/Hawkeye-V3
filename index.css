@@ -1,0 +1,183 @@
+/* 
+© 2026 Hawkeye AS – Levert av Haut Forvalting AS.
+Design System & Global Styles
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Tokens */
+  --brand-primary: #F25A13;
+  --brand-dark: #0f172a;
+  --brand-silver: hsla(0, 0%, 87%, 1);
+  --brand-gradient: linear-gradient(90deg, hsla(0, 0%, 87%, 1) 0%, hsla(19, 90%, 51%, 1) 100%, hsla(6, 95%, 50%, 1) 100%);
+  
+  /* Typography Scale (Clamp) */
+  --fs-h1: clamp(3rem, 8vw, 6rem);
+  --fs-h2: clamp(2rem, 5vw, 4rem);
+  --fs-body: clamp(1rem, 1.1vw, 1.25rem);
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  color: var(--brand-dark);
+  background-color: var(--brand-silver);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.bg-gradient-brand {
+  background: var(--brand-gradient);
+}
+
+/* HUTSTUF Inspired Styles */
+.immersive-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.immersive-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation Utilities */
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  min-width: 240px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  z-index: 100;
+  border: 1px solid rgba(0,0,0,0.05);
+  backdrop-filter: blur(20px);
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+  animation: dropdownFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Enhanced FAQ Styles */
+.faq-item {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* News Card */
+.news-card {
+  background: white;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.news-card:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* Accessibility Focus */
+:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-silver);
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-primary);
+}
+
+/* Animated Nodes */
+@keyframes pulse-node {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+.animate-pulse-node {
+  animation: pulse-node 3s infinite ease-in-out;
+}
+
+@keyframes draw-line {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+.animate-draw-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-line 4s forwards ease-out;
+}

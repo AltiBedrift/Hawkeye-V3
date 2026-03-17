@@ -1,0 +1,46 @@
+{
+  "name": "Copy of Hawkeye AS | Teknisk Geodata \u0026 Dokumentasjon",
+  "short_name": "Hawkeye",
+  "description": "Spesialisert partner innen geomatikk, landmåling og dronekartlegging for kritiske infrastrukturprosjekter i Norge.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Hawkeye AS",
+      "url": "https://hawkeyeas.no"
+    },
+    {
+      "name": "AltiBedrift Team",
+      "role": "Platform \u0026 Strategy"
+    }
+  ],
+  "keywords": [
+    "geomatikk",
+    "landmåling",
+    "stikking",
+    "dronekartlegging",
+    "droneinspeksjon",
+    "3D laserskanning",
+    "punktsky",
+    "teknisk dokumentasjon",
+    "as-built dokumentasjon",
+    "kontrollmåling",
+    "mengdekontroll",
+    "geodata"
+  ],
+  "theme": {
+    "color_primary": "#F25A13",
+    "color_secondary": "#0f172a",
+    "color_background": "#DDDDDD"
+  },
+  "social": {
+    "twitter": "@hawkeyeas",
+    "linkedin": "company/hawkeyeas",
+    "facebook": "hawkeyeas.no"
+  },
+  "requestFramePermissions": [],
+  "settings": {
+    "analytics_enabled": true,
+    "ai_assistant_enabled": true,
+    "pwa_installable": true
+  }
+}

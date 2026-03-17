@@ -1,0 +1,124 @@
+{
+  "customer": "Hawkeye AS",
+  "field": "Geomatikk, Landmåling & Teknisk Dokumentasjon",
+  "slogan": "Presisjon i hver dimensjon",
+  "entities": {
+    "services": [
+      {
+        "id": "inspeksjon-ror-tank",
+        "title": "Inspeksjon av rør, tanker og sjakter",
+        "tags": ["rør", "tank", "silo", "sjakt", "trange rom", "kloakk", "kulvert", "elios", "innendørs"],
+        "description": "Spesialist-tjeneste for inspeksjon i lukkede og utilgjengelige rom der GPS ikke fungerer.",
+        "equipment": "Elios 2 kollisjonssikker drone med beskyttelsesbur.",
+        "capabilities": ["Flyvning i totalt mørke", "Ingen GPS nødvendig", "Høyoppløselig bilde i rør ned til 1m"]
+      },
+      {
+        "id": "dronekartlegging",
+        "title": "Dronekartlegging & Ortofoto",
+        "description": "Effektiv dronekartlegging for store områder. Vi leverer høyoppløselige ortofoto og terrengmodeller med høy nøyaktighet for prosjektering og masseberegning.",
+        "methods": ["Fotogrammetri", "PPK/RTK", "GCP (Bakkekontroll)"],
+        "deliverables": ["Ortofoto (1-3cm GSD)", "DTM (Digital Terrain Model)", "DSM (Digital Surface Model)", "Punktskyer"],
+        "use_cases": ["Masseberegning", "Terrengmodeller", "Situasjonskart", "Statusoppdatering på anlegg"],
+        "accuracy": "1-3 cm i plan og høyde",
+        "equipment": ["DJI Enterprise-serien", "RTK-mottakere"],
+        "certifications": ["RO3/Specific (Luftfartstilsynet)"]
+      },
+      {
+        "id": "laserskanning",
+        "title": "3D Laserskanning & Punktsky",
+        "description": "Presis 3D laserskanning for as-built dokumentasjon og BIM-modellering. Fanger millioner av punkter for å skape nøyaktige digitale kopier av fysiske objekter.",
+        "methods": ["Terrestriell Laserskanning", "HDR-fotografering"],
+        "deliverables": ["Registrert punktsky (E57, RCP, LAS)", "3D-BIM modeller (IFC, RVT)", "As-built dokumentasjon", "Mesher/Flatemodeller"],
+        "use_cases": ["Industrianlegg", "Skip og verft", "Fasader og arkitektur", "Verneverdige bygg", "Deformasjonskontroll"],
+        "accuracy": "Under 2 mm på korte avstander",
+        "equipment": ["Leica ScanStation P40", "Trimble utstyr"],
+        "software": ["Leica Cyclone", "Leica Infinity", "Autodesk Revit"]
+      },
+      {
+        "id": "landmaling",
+        "title": "Landmåling & Stikking",
+        "description": "Tradisjonell landmåling og teknisk stikking for bygg og anlegg. Vi sikrer at alt blir plassert nøyaktig i henhold til prosjekterte tegninger.",
+        "methods": ["Teknisk stikking", "Kontrollmåling", "Fastmerkenett", "Profilkontroll"],
+        "deliverables": ["Stikkingsdata", "Kontrollrapporter", "As-built iht. V770", "NVDB-data"],
+        "use_cases": ["Vei og infrastruktur", "Tunnel", "Betongkonstruksjoner", "Tomteutvikling"],
+        "accuracy": "Millimeter-nivå",
+        "standards": ["V770", "NVDB", "FKB", "SOSI"]
+      },
+      {
+        "id": "mobile-mapping",
+        "title": "Mobile Mapping",
+        "description": "Rask og effektiv datainnsamling langs vei ved bruk av bilmontert utstyr. Perfekt for kartlegging av skilt, rekkverk og veidekke uten behov for trafikkdirigering.",
+        "methods": ["Bilmontert laserskanning", "360° kamerasystem"],
+        "deliverables": ["Georefererte punktskyer", "360° bilder", "Vektordata av vegobjekter"],
+        "use_cases": ["Vegvedlikehold", "Infrastrukturplanlegging", "As-built av lange strekninger"]
+      },
+      {
+        "id": "inspeksjon",
+        "title": "Inspeksjon med drone",
+        "description": "Sikker inspeksjon av utilgjengelige områder som rør, tanker, broer og rasfarlige skråninger ved bruk av spesialdroner.",
+        "methods": ["Visuell inspeksjon (RGB)", "Termisk inspeksjon", "Innendørs droneflyvning"],
+        "equipment": ["Elios 2 (Kollisjonssikker)", "Høyoppløselig zoom-kamera"],
+        "use_cases": ["Ras-inspeksjon", "Tank- og silokontroll", "Broinspeksjon", "Kraftlinjer"]
+      },
+      {
+        "id": "panorama",
+        "title": "360° Panorama & Dokumentasjon",
+        "description": "Visuell dokumentasjon av prosjekter gjennom høyoppløselige 360-graders bilder. Gir en unik oversikt over fremdrift og as-built tilstand.",
+        "deliverables": ["Interaktive 360°-turer", "Georefererte panoramabilder"],
+        "use_cases": ["Fremdriftsdokumentasjon", "Virtuell befaring", "FDV-dokumentasjon"]
+      },
+      {
+        "id": "databehandling",
+        "title": "Databehandling & GIS",
+        "description": "Vi prosesserer rådata fra ulike kilder og leverer ferdig analyserte data i de formatene kunden har behov for.",
+        "services": ["Punktskyprosessering", "GIS-analyser", "Mengdeberegning", "Formatkonvertering"],
+        "software": ["ArcGIS", "QGIS", "Civil 3D", "Gemini"]
+      }
+    ],
+    "industries": [
+      "Samferdsel (Vei og bane)",
+      "Bygg og anlegg",
+      "Offshore og maritim",
+      "Industri og kraft",
+      "Offentlig sektor (Kommune/Vegvesen)"
+    ],
+    "equipment": [
+      {
+        "name": "Leica ScanStation P40",
+        "type": "Terrestriell Laserskanner",
+        "features": ["Millimeterpresisjon", "HDR-bilder", "Lang rekkevidde (270m)"]
+      },
+      {
+        "name": "Elios 2",
+        "type": "Spesialdrone for trange rom",
+        "features": ["Beskyttelsesbur", "Ingen GPS nødvendig", "Kraftig LED-lys"]
+      },
+      {
+        "name": "Leica GS18 T",
+        "type": "GNSS-mottaker",
+        "features": ["Tilt-kompensasjon", "Rask innmåling", "Imun mot magnetiske forstyrrelser"]
+      }
+    ],
+    "company_info": {
+      "name": "Hawkeye AS",
+      "leader": "Rune Samnøy",
+      "hq_location": "Holmefjord, Bjørnafjorden kommune",
+      "contact": {
+        "email": "post@hawkeyeas.no",
+        "web": "https://hawkeyeas.no/"
+      },
+      "focus": "Spesialister på fangst og behandling av 3D-data for komplekse prosjekter.",
+      "certifications": [
+        "RO3/Specific (Luftfartstilsynet)",
+        "Godkjent for arbeid på veg (Arbeid på veg kurs)",
+        "Sikkerhetskurs for industri/offshore"
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Hva er V770?",
+        "answer": "V770 er Statens vegvesens veinormal for landmålingsarbeider. Den stiller strenge krav til dokumentasjon, nøyaktighet og koding (SOSI/NVDB) av data som leveres i samferdselsprosjekter. Hawkeye utfører as-built dokumentasjon som tilfredsstiller alle krav i V770."
+      }
+    ]
+  }
+}

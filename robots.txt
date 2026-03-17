@@ -1,0 +1,26 @@
+# © 2026 Hawkeye AS – Robots Configuration
+# This file controls crawling logic for the entire domain.
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /landmaling.html
+Allow: /dronekartlegging.html
+Allow: /laserskanning.html
+Allow: /kontraktsoppfolging.html
+Allow: /gis.html
+Allow: /panorama.html
+Allow: /mobile-mapping.html
+Allow: /inspeksjon.html
+Allow: /databehandling.html
+Allow: /om-oss.html
+Allow: /prosjekter.html
+Allow: /personvern.html
+Allow: /assets/
+Allow: /icons/
+
+# Host Information
+Host: https://hawkeyeas.no
+
+# Main Sitemap Index
+Sitemap: https://hawkeyeas.no/sitemap.xml
